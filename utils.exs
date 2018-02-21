@@ -180,6 +180,11 @@ defmodule Utils do
 
     defp _my_split([h | t], v, forward_list), do: _my_split(t , v-1, [h | forward_list])
 
+    # とりあえず追加
+    def log(:debug, msg) do
+        IO.puts("  --- #{msg}")
+    end
+
 end
 
 # 個人情報（詳細)
